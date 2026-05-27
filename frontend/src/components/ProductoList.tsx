@@ -21,7 +21,7 @@ function ProductoList({
 
       const respuesta =
         await axios.get(
-          'http://localhost:3001/api/productos'
+          'https://crud-stock.onrender.com/api/productos'
         );
 
       setProductos(
@@ -40,7 +40,7 @@ function ProductoList({
     try {
 
       await axios.delete(
-        `http://localhost:3001/api/productos/${id}`
+        `https://crud-stock.onrender.com/api/productos/${id}`
       );
 
       obtenerProductos();
