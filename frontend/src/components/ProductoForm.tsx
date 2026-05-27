@@ -34,7 +34,7 @@ function ProductoForm({
       if (productoEditar) {
 
         await axios.put(
-          `http://localhost:3001/api/productos/${productoEditar.id}`,
+          `https://crud-stock.onrender.com/api/productos/${productoEditar.id}`,
           {
             nombre,
             precio,
@@ -50,7 +50,7 @@ function ProductoForm({
       } else {
 
         await axios.post(
-          'http://localhost:3001/api/productos',
+          'https://crud-stock.onrender.com/api/productos',
           {
             nombre,
             precio,
